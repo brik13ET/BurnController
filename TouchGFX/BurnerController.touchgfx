@@ -1,0 +1,297 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "RadioButton",
+            "Name": "radioButton1",
+            "X": 276,
+            "Y": 196,
+            "Width": 44,
+            "Height": 44,
+            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_Round_button_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_Round_button_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_Round_button_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_Round_button_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Style": "Style3"
+          },
+          {
+            "Type": "ScrollList",
+            "Name": "scrollList1",
+            "X": 35,
+            "Width": 251,
+            "Height": 240,
+            "Snapping": true,
+            "IsCircular": true,
+            "ItemTemplateName": "MenuElementActive",
+            "NumberofItems": 6,
+            "Easing": "Cubic",
+            "EasingOption": "InOut",
+            "SwipeAcceleration": 8.0,
+            "DragAcceleration": 8.0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen2",
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "set1",
+            "X": 13,
+            "Y": 45,
+            "Width": 75,
+            "Height": 25,
+            "TextId": "__SingleUse_6IKM",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_QSC4",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "set2",
+            "X": 13,
+            "Y": 88,
+            "Width": 75,
+            "Height": 25,
+            "TextId": "__SingleUse_2QF3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_DCYP",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "set3",
+            "X": 13,
+            "Y": 128,
+            "Width": 75,
+            "Height": 25,
+            "TextId": "__SingleUse_VRYB",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_X3XK",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "set4",
+            "X": 13,
+            "Y": 171,
+            "Width": 75,
+            "Height": 25,
+            "TextId": "__SingleUse_0O84",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_7UYH",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "ScrollWheel",
+            "Name": "scrollWheel1",
+            "X": -192,
+            "Width": 251,
+            "Height": 240,
+            "SelectedItemOffset": 60,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "MenuElementActive",
+            "ItemTemplateName": "MenuElement",
+            "NumberofItems": 4,
+            "InitialElement": 1,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "SwipeAcceleration": 8.0,
+            "DragAcceleration": 1.0
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "MenuElement",
+        "Width": 251,
+        "Height": 60,
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "paramName",
+            "X": 58,
+            "Y": 18,
+            "Width": 54,
+            "Height": 25,
+            "TextId": "__SingleUse_BKFF",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "value",
+            "X": 198,
+            "Y": 18,
+            "Width": 25,
+            "Height": 25,
+            "TextId": "__SingleUse_XY4W",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_8RLB",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "MenuElementActive",
+        "Width": 251,
+        "Height": 60,
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "paramName",
+            "X": 58,
+            "Y": 18,
+            "Width": 54,
+            "Height": 25,
+            "TextId": "__SingleUse_63VS",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 17,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "value",
+            "X": 198,
+            "Y": 18,
+            "Width": 25,
+            "Height": 25,
+            "TextId": "__SingleUse_ZP7Q",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_XKBD",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 320,
+      "Height": 240
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 320,
+        "Height": 240
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../BurnerController.ioc --platform=m4",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F4"
+  },
+  "Version": "4.18.0"
+}
