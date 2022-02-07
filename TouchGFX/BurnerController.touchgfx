@@ -5,33 +5,27 @@
         "Name": "Screen1",
         "Components": [
           {
-            "Type": "RadioButton",
-            "Name": "radioButton1",
-            "X": 276,
-            "Y": 196,
-            "Width": 44,
-            "Height": 44,
-            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_Round_button_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_Round_button_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_Round_button_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_Round_button_pressed.png",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Style": "Style3"
+            "Type": "Button",
+            "Name": "button1",
+            "X": 21,
+            "Width": 230,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Square_medium_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_medium.png",
+            "Alpha": 50,
+            "Style": "Style11"
           },
           {
             "Type": "ScrollList",
             "Name": "scrollList1",
-            "X": 35,
             "Width": 251,
             "Height": 240,
-            "Snapping": true,
-            "IsCircular": true,
-            "ItemTemplateName": "MenuElementActive",
-            "NumberofItems": 6,
-            "Easing": "Cubic",
+            "ItemTemplateName": "MenuElement",
+            "NumberofItems": 5,
+            "Easing": "Linear",
             "EasingOption": "InOut",
-            "SwipeAcceleration": 8.0,
-            "DragAcceleration": 8.0
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0
           }
         ],
         "Interactions": [
@@ -143,7 +137,6 @@
             "Height": 240,
             "SelectedItemOffset": 60,
             "UseSelectedStyle": true,
-            "SelectedItemTemplateName": "MenuElementActive",
             "ItemTemplateName": "MenuElement",
             "NumberofItems": 4,
             "InitialElement": 1,
@@ -195,50 +188,6 @@
             "AutoSize": true,
             "Wildcard1": {
               "TextId": "__SingleUse_8RLB",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          }
-        ],
-        "Interactions": []
-      },
-      {
-        "Name": "MenuElementActive",
-        "Width": 251,
-        "Height": 60,
-        "Components": [
-          {
-            "Type": "TextArea",
-            "Name": "paramName",
-            "X": 58,
-            "Y": 18,
-            "Width": 54,
-            "Height": 25,
-            "TextId": "__SingleUse_63VS",
-            "TextRotation": "0",
-            "Color": {
-              "Green": 17,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "value",
-            "X": 198,
-            "Y": 18,
-            "Width": 25,
-            "Height": 25,
-            "TextId": "__SingleUse_ZP7Q",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_XKBD",
               "UseBuffer": true,
               "BufferSize": 10
             }

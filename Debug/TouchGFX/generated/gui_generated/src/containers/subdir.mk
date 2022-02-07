@@ -5,15 +5,12 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/generated/gui_generated/src/containers/MenuElementActiveBase.cpp \
 ../TouchGFX/generated/gui_generated/src/containers/MenuElementBase.cpp 
 
 OBJS += \
-./TouchGFX/generated/gui_generated/src/containers/MenuElementActiveBase.o \
 ./TouchGFX/generated/gui_generated/src/containers/MenuElementBase.o 
 
 CPP_DEPS += \
-./TouchGFX/generated/gui_generated/src/containers/MenuElementActiveBase.d \
 ./TouchGFX/generated/gui_generated/src/containers/MenuElementBase.d 
 
 
@@ -24,7 +21,7 @@ TouchGFX/generated/gui_generated/src/containers/%.o: ../TouchGFX/generated/gui_g
 clean: clean-TouchGFX-2f-generated-2f-gui_generated-2f-src-2f-containers
 
 clean-TouchGFX-2f-generated-2f-gui_generated-2f-src-2f-containers:
-	-$(RM) ./TouchGFX/generated/gui_generated/src/containers/MenuElementActiveBase.d ./TouchGFX/generated/gui_generated/src/containers/MenuElementActiveBase.o ./TouchGFX/generated/gui_generated/src/containers/MenuElementBase.d ./TouchGFX/generated/gui_generated/src/containers/MenuElementBase.o
+	-$(RM) ./TouchGFX/generated/gui_generated/src/containers/MenuElementBase.d ./TouchGFX/generated/gui_generated/src/containers/MenuElementBase.o
 
 .PHONY: clean-TouchGFX-2f-generated-2f-gui_generated-2f-src-2f-containers
 

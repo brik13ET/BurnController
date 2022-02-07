@@ -12,27 +12,25 @@ Screen1ViewBase::Screen1ViewBase() :
     __background.setPosition(0, 0, 320, 240);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 
-    radioButton1.setXY(276, 196);
-    radioButton1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_RADIO_BUTTONS_RADIO_ROUND_BUTTON_INACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_RADIO_BUTTONS_RADIO_ROUND_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_RADIO_BUTTONS_RADIO_ROUND_BUTTON_ACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_RADIO_BUTTONS_RADIO_ROUND_BUTTON_NORMAL_ID));
-    radioButton1.setSelected(false);
-    radioButton1.setDeselectionEnabled(false);
+    button1.setXY(21, 0);
+    button1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_MEDIUM_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_MEDIUM_PRESSED_ID));
+    button1.setAlpha(50);
 
-    scrollList1.setPosition(35, 0, 251, 240);
+    scrollList1.setPosition(0, 0, 251, 240);
     scrollList1.setHorizontal(false);
-    scrollList1.setCircular(true);
-    scrollList1.setEasingEquation(touchgfx::EasingEquations::cubicEaseInOut);
-    scrollList1.setSwipeAcceleration(80);
-    scrollList1.setDragAcceleration(80);
-    scrollList1.setNumberOfItems(6);
+    scrollList1.setCircular(false);
+    scrollList1.setEasingEquation(touchgfx::EasingEquations::linearEaseInOut);
+    scrollList1.setSwipeAcceleration(10);
+    scrollList1.setDragAcceleration(10);
+    scrollList1.setNumberOfItems(7);
     scrollList1.setPadding(0, 0);
-    scrollList1.setSnapping(true);
+    scrollList1.setSnapping(false);
     scrollList1.setDrawableSize(60, 0);
     scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
 
     add(__background);
-    add(radioButton1);
+    add(button1);
     add(scrollList1);
-    radioButtonGroup1.add(radioButton1);
 }
 
 void Screen1ViewBase::setupScreen()
@@ -61,7 +59,7 @@ void Screen1ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInter
     if (items == &scrollList1ListItems)
     {
         touchgfx::Drawable* d = items->getDrawable(containerIndex);
-        MenuElementActive* cc = (MenuElementActive*)d;
+        MenuElement* cc = (MenuElement*)d;
         scrollList1UpdateItem(*cc, itemIndex);
     }
 }

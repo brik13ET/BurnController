@@ -5,16 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/gui/src/containers/MenuElement.cpp \
-../TouchGFX/gui/src/containers/MenuElementActive.cpp 
+../TouchGFX/gui/src/containers/MenuElement.cpp 
 
 OBJS += \
-./TouchGFX/gui/src/containers/MenuElement.o \
-./TouchGFX/gui/src/containers/MenuElementActive.o 
+./TouchGFX/gui/src/containers/MenuElement.o 
 
 CPP_DEPS += \
-./TouchGFX/gui/src/containers/MenuElement.d \
-./TouchGFX/gui/src/containers/MenuElementActive.d 
+./TouchGFX/gui/src/containers/MenuElement.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +21,7 @@ TouchGFX/gui/src/containers/%.o: ../TouchGFX/gui/src/containers/%.cpp TouchGFX/g
 clean: clean-TouchGFX-2f-gui-2f-src-2f-containers
 
 clean-TouchGFX-2f-gui-2f-src-2f-containers:
-	-$(RM) ./TouchGFX/gui/src/containers/MenuElement.d ./TouchGFX/gui/src/containers/MenuElement.o ./TouchGFX/gui/src/containers/MenuElementActive.d ./TouchGFX/gui/src/containers/MenuElementActive.o
+	-$(RM) ./TouchGFX/gui/src/containers/MenuElement.d ./TouchGFX/gui/src/containers/MenuElement.o
 
 .PHONY: clean-TouchGFX-2f-gui-2f-src-2f-containers
 

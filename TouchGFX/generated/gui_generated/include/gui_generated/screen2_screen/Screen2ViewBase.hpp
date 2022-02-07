@@ -11,7 +11,6 @@
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp>
 #include <gui/containers/MenuElement.hpp>
-#include <gui/containers/MenuElementActive.hpp>
 
 class Screen2ViewBase : public touchgfx::View<Screen2Presenter>
 {
@@ -21,11 +20,6 @@ public:
     virtual void setupScreen();
 
     virtual void scrollWheel1UpdateItem(MenuElement& item, int16_t itemIndex)
-    {
-        // Override and implement this function in Screen2
-    }
-
-    virtual void scrollWheel1UpdateCenterItem(MenuElementActive& item, int16_t itemIndex)
     {
         // Override and implement this function in Screen2
     }
@@ -45,7 +39,6 @@ protected:
     touchgfx::TextAreaWithOneWildcard set4;
     touchgfx::ScrollWheelWithSelectionStyle scrollWheel1;
     touchgfx::DrawableListItems<MenuElement, 5> scrollWheel1ListItems;
-    touchgfx::DrawableListItems<MenuElementActive, 2> scrollWheel1SelectedListItems;
 
     /*
      * Wildcard Buffers

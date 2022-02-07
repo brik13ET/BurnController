@@ -32,13 +32,7 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
-struct settings{
-	struct param set1;
-	struct param set2;
-	struct param set3;
-	struct param set4;
-	struct param set5;
-}settings;
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -96,24 +90,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 	}
 
 }
-void SettingsInit()
-{
-	strcpy("Set1",settings.set1.name);
-	settings.set1.value = 32;
 
-	strcpy("Set2",settings.set2.name);
-	settings.set2.value = 32;
-
-	strcpy("Set3",settings.set3.name);
-	settings.set3.value = 32;
-
-	strcpy("Set4",settings.set4.name);
-	settings.set4.value = 32;
-
-	strcpy("Set5",settings.set5.name);
-	settings.set5.value = 32;
-
-}
 
 /* USER CODE END 0 */
 
@@ -131,6 +108,7 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
+
 
   /* USER CODE BEGIN Init */
 

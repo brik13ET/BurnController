@@ -53,8 +53,6 @@ TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../TouchGFX/gui/include/gui/containers/MenuElement.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp \
- ../TouchGFX/gui/include/gui/containers/MenuElementActive.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementActiveBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 
@@ -163,10 +161,6 @@ TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.o: \
 ../TouchGFX/gui/include/gui/containers/MenuElement.hpp:
 
 ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp:
-
-../TouchGFX/gui/include/gui/containers/MenuElementActive.hpp:
-
-../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementActiveBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 

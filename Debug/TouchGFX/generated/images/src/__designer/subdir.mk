@@ -5,22 +5,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_active.cpp \
-../TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_inactive.cpp \
-../TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_normal.cpp \
-../TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_pressed.cpp 
+../TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium.cpp \
+../TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium_pressed.cpp 
 
 OBJS += \
-./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_active.o \
-./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_inactive.o \
-./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_normal.o \
-./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_pressed.o 
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium.o \
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium_pressed.o 
 
 CPP_DEPS += \
-./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_active.d \
-./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_inactive.d \
-./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_normal.d \
-./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_pressed.d 
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium.d \
+./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium_pressed.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -30,7 +24,7 @@ TouchGFX/generated/images/src/__designer/%.o: ../TouchGFX/generated/images/src/_
 clean: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__designer
 
 clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__designer:
-	-$(RM) ./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_active.d ./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_active.o ./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_inactive.d ./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_inactive.o ./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_normal.d ./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_normal.o ./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_pressed.d ./TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_Round_button_pressed.o
+	-$(RM) ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium.o ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium_pressed.d ./TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Square_medium_pressed.o
 
 .PHONY: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__designer
 

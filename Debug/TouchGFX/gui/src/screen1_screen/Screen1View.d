@@ -43,21 +43,19 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
  ../TouchGFX/gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- ../TouchGFX/gui/include/gui/containers/MenuElementActive.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementActiveBase.hpp \
+ ../TouchGFX/gui/include/gui/containers/MenuElement.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
  ../TouchGFX/App/../gui/include/gui/containers/MenuElement.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp \
  ../Core/Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -175,7 +173,7 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
@@ -187,9 +185,9 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
-../TouchGFX/gui/include/gui/containers/MenuElementActive.hpp:
+../TouchGFX/gui/include/gui/containers/MenuElement.hpp:
 
-../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementActiveBase.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
@@ -199,11 +197,7 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
-
 ../TouchGFX/App/../gui/include/gui/containers/MenuElement.hpp:
-
-../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp:
 
 ../Core/Inc/main.h:
 

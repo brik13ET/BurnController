@@ -8,10 +8,9 @@
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/RadioButton.hpp>
+#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
-#include <gui/containers/MenuElementActive.hpp>
-#include <touchgfx/widgets/RadioButtonGroup.hpp>
+#include <gui/containers/MenuElement.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -21,7 +20,7 @@ public:
     virtual void setupScreen();
     virtual void handleKeyEvent(uint8_t key);
 
-    virtual void scrollList1UpdateItem(MenuElementActive& item, int16_t itemIndex)
+    virtual void scrollList1UpdateItem(MenuElement& item, int16_t itemIndex)
     {
         // Override and implement this function in Screen1
     }
@@ -35,10 +34,9 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::RadioButton radioButton1;
+    touchgfx::Button button1;
     touchgfx::ScrollList scrollList1;
-    touchgfx::DrawableListItems<MenuElementActive, 5> scrollList1ListItems;
-    touchgfx::RadioButtonGroup<1> radioButtonGroup1;
+    touchgfx::DrawableListItems<MenuElement, 5> scrollList1ListItems;
 
 private:
     touchgfx::Callback<Screen1ViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;

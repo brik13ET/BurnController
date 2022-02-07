@@ -53,9 +53,7 @@ TouchGFX/gui/src/screen2_screen/Screen2Presenter.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../TouchGFX/gui/include/gui/containers/MenuElement.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp \
- ../TouchGFX/gui/include/gui/containers/MenuElementActive.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementActiveBase.hpp
+ ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp
 
 ../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:
 
@@ -164,7 +162,3 @@ TouchGFX/gui/src/screen2_screen/Screen2Presenter.o: \
 ../TouchGFX/gui/include/gui/containers/MenuElement.hpp:
 
 ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp:
-
-../TouchGFX/gui/include/gui/containers/MenuElementActive.hpp:
-
-../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementActiveBase.hpp:

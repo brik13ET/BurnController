@@ -32,7 +32,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../TouchGFX/App/app_touchgfx.h ../Core/Inc/ili9341.h ../Core/Inc/main.h \
  ../Core/Inc/colors.h ../Core/Inc/registers.h ../Core/Inc/fonts.h \
  ../Core/Inc/image.h \
- C:/!MEGA/!myFiles/STM/BurnerController/TouchGFX/TouchGFX_DataTransfer.h
+ C:/Users/Sergey/Desktop/My/BurnerController/TouchGFX/TouchGFX_DataTransfer.h
 
 ../Core/Inc/main.h:
 
@@ -110,4 +110,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../Core/Inc/image.h:
 
-C:/!MEGA/!myFiles/STM/BurnerController/TouchGFX/TouchGFX_DataTransfer.h:
+C:/Users/Sergey/Desktop/My/BurnerController/TouchGFX/TouchGFX_DataTransfer.h:

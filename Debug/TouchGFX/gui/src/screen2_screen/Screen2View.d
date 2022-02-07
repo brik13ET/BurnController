@@ -54,8 +54,6 @@ TouchGFX/gui/src/screen2_screen/Screen2View.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../TouchGFX/gui/include/gui/containers/MenuElement.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp \
- ../TouchGFX/gui/include/gui/containers/MenuElementActive.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementActiveBase.hpp \
  ../Core/Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -194,10 +192,6 @@ TouchGFX/gui/src/screen2_screen/Screen2View.o: \
 ../TouchGFX/gui/include/gui/containers/MenuElement.hpp:
 
 ../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementBase.hpp:
-
-../TouchGFX/gui/include/gui/containers/MenuElementActive.hpp:
-
-../TouchGFX/generated/gui_generated/include/gui_generated/containers/MenuElementActiveBase.hpp:
 
 ../Core/Inc/main.h:
 

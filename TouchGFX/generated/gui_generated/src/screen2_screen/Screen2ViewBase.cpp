@@ -55,9 +55,6 @@ Screen2ViewBase::Screen2ViewBase() :
     scrollWheel1.setSelectedItemExtraSize(0, 0);
     scrollWheel1.setSelectedItemMargin(0, 0);
     scrollWheel1.setDrawableSize(60, 0);
-    scrollWheel1.setDrawables(scrollWheel1ListItems, updateItemCallback,
-                              scrollWheel1SelectedListItems, updateItemCallback);
-    scrollWheel1.animateToItem(1, 0);
 
     add(__background);
     add(set1);
@@ -74,10 +71,6 @@ void Screen2ViewBase::setupScreen()
     {
         scrollWheel1ListItems[i].initialize();
     }
-    for (int i = 0; i < scrollWheel1SelectedListItems.getNumberOfDrawables(); i++)
-    {
-        scrollWheel1SelectedListItems[i].initialize();
-    }
 }
 
 void Screen2ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
@@ -87,11 +80,5 @@ void Screen2ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInter
         touchgfx::Drawable* d = items->getDrawable(containerIndex);
         MenuElement* cc = (MenuElement*)d;
         scrollWheel1UpdateItem(*cc, itemIndex);
-    }
-    else if (items == &scrollWheel1SelectedListItems)
-    {
-        touchgfx::Drawable* d = items->getDrawable(containerIndex);
-        MenuElementActive* cc = (MenuElementActive*)d;
-        scrollWheel1UpdateCenterItem(*cc, itemIndex);
     }
 }
