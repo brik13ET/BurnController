@@ -38,7 +38,7 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 struct param{
-	char 		name[10];
+	uint16_t	name[80];
 	uint16_t 	value;
 };
 
@@ -46,6 +46,17 @@ struct param{
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
+
+extern TIM_HandleTypeDef htim1;
+
+extern uint8_t setMode;
+
+extern uint8_t needChangeScreen;
+extern int8_t enc_value;
+
+extern struct param* status;
+extern struct param* set;
+extern struct param* rareset;
 
 /* USER CODE END EC */
 
@@ -74,7 +85,9 @@ void Error_Handler(void);
 #define ENC_BTN_GPIO_Port GPIOB
 #define ENC_BTN_EXTI_IRQn EXTI15_10_IRQn
 /* USER CODE BEGIN Private defines */
-
+#define status_SIZE 6
+#define set_SIZE 7
+#define rareset_SIZE 17
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

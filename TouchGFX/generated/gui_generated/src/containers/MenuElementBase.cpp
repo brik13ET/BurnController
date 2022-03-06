@@ -7,19 +7,20 @@
 
 MenuElementBase::MenuElementBase()
 {
-    setWidth(251);
+    setWidth(320);
     setHeight(60);
-    paramName.setXY(58, 18);
+    paramName.setPosition(0, 18, 252, 25);
     paramName.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     paramName.setLinespacing(0);
+    paramNameBuffer[0] = 0;
+    paramName.setWildcard(paramNameBuffer);
     paramName.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BKFF));
 
-    value.setXY(198, 18);
+    value.setPosition(252, 18, 68, 25);
     value.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     value.setLinespacing(0);
-    Unicode::snprintf(valueBuffer, VALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_8RLB).getText());
+    valueBuffer[0] = 0;
     value.setWildcard(valueBuffer);
-    value.resizeToCurrentText();
     value.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XY4W));
 
     add(paramName);

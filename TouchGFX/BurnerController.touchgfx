@@ -2,30 +2,31 @@
   "Application": {
     "Screens": [
       {
-        "Name": "Screen1",
+        "Name": "Status",
         "Components": [
           {
-            "Type": "Button",
-            "Name": "button1",
-            "X": 21,
-            "Width": 230,
+            "Type": "Box",
+            "Name": "box1",
+            "Y": 90,
+            "Width": 320,
             "Height": 60,
-            "Pressed": "__designer\\Blue_Buttons_Square_medium_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Square_medium.png",
-            "Alpha": 50,
-            "Style": "Style11"
+            "Color": {
+              "Red": 43,
+              "Green": 80,
+              "Blue": 194
+            }
           },
           {
-            "Type": "ScrollList",
-            "Name": "scrollList1",
-            "Width": 251,
+            "Type": "ScrollWheel",
+            "Name": "scrollWheel1",
+            "Width": 320,
             "Height": 240,
+            "SelectedItemOffset": 80,
             "ItemTemplateName": "MenuElement",
-            "NumberofItems": 5,
+            "NumberofItems": 6,
+            "InitialElement": 1,
             "Easing": "Linear",
-            "EasingOption": "InOut",
-            "SwipeAcceleration": 1.0,
-            "DragAcceleration": 1.0
+            "EasingOption": "Out"
           }
         ],
         "Interactions": [
@@ -36,131 +37,111 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Screen2"
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Settings"
             }
           }
         ]
       },
       {
-        "Name": "Screen2",
+        "Name": "Settings",
         "Components": [
           {
-            "Type": "TextArea",
-            "Name": "set1",
-            "X": 13,
-            "Y": 45,
-            "Width": 75,
-            "Height": 25,
-            "TextId": "__SingleUse_6IKM",
-            "TextRotation": "0",
+            "Type": "Box",
+            "Name": "box1",
+            "Y": 90,
+            "Width": 320,
+            "Height": 60,
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_QSC4",
-              "UseBuffer": true,
-              "BufferSize": 20
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "set2",
-            "X": 13,
-            "Y": 88,
-            "Width": 75,
-            "Height": 25,
-            "TextId": "__SingleUse_2QF3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_DCYP",
-              "UseBuffer": true,
-              "BufferSize": 20
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "set3",
-            "X": 13,
-            "Y": 128,
-            "Width": 75,
-            "Height": 25,
-            "TextId": "__SingleUse_VRYB",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_X3XK",
-              "UseBuffer": true,
-              "BufferSize": 20
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "set4",
-            "X": 13,
-            "Y": 171,
-            "Width": 75,
-            "Height": 25,
-            "TextId": "__SingleUse_0O84",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_7UYH",
-              "UseBuffer": true,
-              "BufferSize": 20
+              "Red": 43,
+              "Green": 80,
+              "Blue": 194
             }
           },
           {
             "Type": "ScrollWheel",
             "Name": "scrollWheel1",
-            "X": -192,
-            "Width": 251,
+            "Width": 320,
             "Height": 240,
-            "SelectedItemOffset": 60,
-            "UseSelectedStyle": true,
+            "SelectedItemOffset": 80,
             "ItemTemplateName": "MenuElement",
-            "NumberofItems": 4,
+            "NumberofItems": 7,
             "InitialElement": 1,
             "Easing": "Linear",
-            "EasingOption": "In",
-            "SwipeAcceleration": 8.0,
-            "DragAcceleration": 1.0
+            "EasingOption": "Out"
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Advanced"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Advanced",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Y": 90,
+            "Width": 320,
+            "Height": 60,
+            "Color": {
+              "Red": 43,
+              "Green": 80,
+              "Blue": 194
+            }
+          },
+          {
+            "Type": "ScrollWheel",
+            "Name": "scrollWheel1",
+            "Width": 320,
+            "Height": 240,
+            "SelectedItemOffset": 80,
+            "ItemTemplateName": "MenuElement",
+            "NumberofItems": 21,
+            "InitialElement": 1,
+            "Easing": "Linear",
+            "EasingOption": "Out"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Status"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [
       {
         "Name": "MenuElement",
-        "Width": 251,
+        "Width": 320,
         "Height": 60,
         "Components": [
           {
             "Type": "TextArea",
             "Name": "paramName",
-            "X": 58,
             "Y": 18,
-            "Width": 54,
+            "Width": 252,
             "Height": 25,
             "TextId": "__SingleUse_BKFF",
             "TextRotation": "0",
@@ -169,14 +150,17 @@
               "Green": 255,
               "Blue": 255
             },
-            "AutoSize": true
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 80
+            }
           },
           {
             "Type": "TextArea",
             "Name": "value",
-            "X": 198,
+            "X": 252,
             "Y": 18,
-            "Width": 25,
+            "Width": 68,
             "Height": 25,
             "TextId": "__SingleUse_XY4W",
             "TextRotation": "0",
@@ -185,11 +169,9 @@
               "Green": 255,
               "Blue": 255
             },
-            "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_8RLB",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 5
             }
           }
         ],
@@ -202,7 +184,7 @@
       "Height": 240
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Screen1",
+    "StartupScreenName": "Status",
     "SelectedStartupLanguage": "GB",
     "Skin": "Blue",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
@@ -242,5 +224,5 @@
     "DisplayOrientation": "Landscape",
     "Family": "STM32F4"
   },
-  "Version": "4.18.0"
+  "Version": "4.18.1"
 }

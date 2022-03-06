@@ -56,6 +56,12 @@ SRAM_HandleTypeDef hsram1;
 uint8_t needChangeScreen = 0;
 uint8_t setMode = 0;
 int8_t enc_value = 0;
+
+
+struct param* status;
+struct param* set;
+struct param* rareset;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -101,6 +107,33 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+	struct param _status[status_SIZE] =
+	{
+			{u"Температура нагревателя",0},
+			{u"Температура масла",		0},
+			{u"Мощность на нагреватель",0},
+			{u"Таймер насоса подкачки",	0},
+			{u"Таймер на нагрев",		0},
+			{u"Количество розжигов",	0}
+	};
+	struct param _set[set_SIZE] =
+	{
+			{u"температуры теплоносителя",	0},
+			{u"гистерезиса теплоносителя",	0},
+			{u"температуры масла",			0},
+			{u"оборотов насоса масла",		0},
+			{u"оборотов вентилятора надува",0},
+			{u"Время защитного таймера",	0},
+			{u"Количество попыток розжига",	0}
+	};
+	struct param _adv[rareset_SIZE];
+	for (int i = 0; i < rareset_SIZE; ++i) {
+		snprintf(_adv[i].name, sizeof(_adv[i].name), u"Adv Param %d", i);
+		_adv[i].value = i;
+	}
+	status = &_status[0];
+	set = &_set[0];
+	rareset = &_adv[0];
 
   /* USER CODE END 1 */
 
@@ -137,17 +170,14 @@ int main(void)
   HAL_TIM_Encoder_Start(&htim1, TIM_CHANNEL_ALL);
 
   /* USER CODE END 2 */
-
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1) {
-
-
-
     /* USER CODE END WHILE */
 
-  MX_TouchGFX_Process();
+		MX_TouchGFX_Process();
     /* USER CODE BEGIN 3 */
+
 	}
   /* USER CODE END 3 */
 }
