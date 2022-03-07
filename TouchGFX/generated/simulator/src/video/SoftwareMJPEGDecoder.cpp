@@ -8,6 +8,7 @@
 
 #define VIDEO_DECODE_FORMAT 16
 
+extern const unsigned char* frames[];
 namespace
 {
 struct JPEG_RGB
@@ -113,7 +114,7 @@ bool SoftwareMJPEGDecoder::decodeNextFrame(uint8_t* buffer, uint16_t buffer_widt
     //play frame if we have it all
     if (currentMovieOffset + 8 + chunkSize < movieLength)
     {
-        if (streamNo == STREAM0 && chunkType == TYPEDC && chunkSize > 0)
+        if (streamNo == STREAM0 && chunkType == TYPEDC)
         {
             currentMovieOffset += 8;
             //decode frame
@@ -126,10 +127,6 @@ bool SoftwareMJPEGDecoder::decodeNextFrame(uint8_t* buffer, uint16_t buffer_widt
 
         // Advance to next frame
         currentMovieOffset += chunkSize;
-        if (chunkSize == 0) // Skip empty frame
-        {
-            currentMovieOffset += 8;
-        }
         currentMovieOffset = (currentMovieOffset + 1) & 0xFFFFFFFE; //pad to next word
 
         if (currentMovieOffset == lastFrameEnd)

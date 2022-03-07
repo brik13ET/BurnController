@@ -6,6 +6,7 @@
 
 #include <gui/common/FrontendApplication.hpp>
 #include <touchgfx/containers/Container.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class MenuElementBase : public touchgfx::Container
@@ -23,15 +24,13 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::TextAreaWithOneWildcard paramName;
+    touchgfx::TextArea paramName;
     touchgfx::TextAreaWithOneWildcard value;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t PARAMNAME_SIZE = 80;
-    touchgfx::Unicode::UnicodeChar paramNameBuffer[PARAMNAME_SIZE];
-    static const uint16_t VALUE_SIZE = 5;
+    static const uint16_t VALUE_SIZE = 10;
     touchgfx::Unicode::UnicodeChar valueBuffer[VALUE_SIZE];
 
 private:

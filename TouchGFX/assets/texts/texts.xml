@@ -14,14 +14,41 @@
       <Translation Language="GB">New Text</Translation>
     </Text>
     <Text Id="__SingleUse_BKFF" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Temp</Translation>
+    </Text>
+    <Text Id="__SingleUse_XY4W" TypographyId="Default" Alignment="Center" Direction="LTR">
       <Translation Language="GB">&lt;value&gt;</Translation>
     </Text>
-    <Text Id="__SingleUse_XY4W" TypographyId="Default" Alignment="Left" Direction="LTR">
-      <Translation Language="GB">&lt;value&gt;</Translation>
+    <Text Id="__SingleUse_8RLB" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">14</Translation>
+    </Text>
+    <Text Id="__SingleUse_6IKM" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">set1 &lt;value&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_2QF3" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">set2 &lt;value&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_VRYB" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">set3 &lt;value&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_0O84" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">set4 &lt;value&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_QSC4" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">10</Translation>
+    </Text>
+    <Text Id="__SingleUse_DCYP" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">11</Translation>
+    </Text>
+    <Text Id="__SingleUse_X3XK" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">12</Translation>
+    </Text>
+    <Text Id="__SingleUse_7UYH" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">13</Translation>
     </Text>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="arial.ttf" Size="20" Bpp="4" FallbackCharacter="?" WildcardCharacterRanges="a-z,A-Z,0-9,а-я,А-Я" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" FallbackCharacter="?" />
   </Typographies>

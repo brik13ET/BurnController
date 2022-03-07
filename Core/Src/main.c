@@ -56,12 +56,6 @@ SRAM_HandleTypeDef hsram1;
 uint8_t needChangeScreen = 0;
 uint8_t setMode = 0;
 int8_t enc_value = 0;
-
-
-struct param* status;
-struct param* set;
-struct param* rareset;
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -107,6 +101,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+<<<<<<< HEAD
 	struct param _status[status_SIZE] =
 	{
 			{u"Температура нагревателя",0},
@@ -138,6 +133,8 @@ int main(void)
 	status = &_status[0];
 	set = &_set[0];
 	rareset = &_adv[0];
+=======
+>>>>>>> parent of 7bd487e (cyrillic added, normal scrollwall)
 
   /* USER CODE END 1 */
 
@@ -174,14 +171,17 @@ int main(void)
   HAL_TIM_Encoder_Start(&htim1, TIM_CHANNEL_ALL);
 
   /* USER CODE END 2 */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1) {
+
+
+
     /* USER CODE END WHILE */
 
-		MX_TouchGFX_Process();
+  MX_TouchGFX_Process();
     /* USER CODE BEGIN 3 */
-
 	}
   /* USER CODE END 3 */
 }

@@ -2,7 +2,6 @@
 #define MENUELEMENT_HPP
 
 #include <gui_generated/containers/MenuElementBase.hpp>
-#include <stdint.h>
 
 class MenuElement : public MenuElementBase
 {
@@ -13,8 +12,6 @@ public:
     virtual void initialize();
 
     virtual void setNumber(int no);
-
-    virtual void Rename(uint16_t* s);
 
 protected:
 };
