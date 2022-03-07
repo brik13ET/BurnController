@@ -127,8 +127,12 @@ int main(void)
 			{u"Количество попыток розжига",	0}
 	};
 	struct param _adv[rareset_SIZE];
+	wchar_t __tmp2[80];
 	for (int i = 0; i < rareset_SIZE; ++i) {
-		snprintf(_adv[i].name, sizeof(_adv[i].name), u"Adv Param %d", i);
+
+		snprintf(&__tmp2[0], sizeof(_adv[0].name)/sizeof(_adv[0].name[0]), "Adv Param %d", i);
+		strlcpy(_adv[0].name ,&__tmp2[0],sizeof(_adv[0].name)/sizeof(_adv[0].name[0]));
+
 		_adv[i].value = i;
 	}
 	status = &_status[0];

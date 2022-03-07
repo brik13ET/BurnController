@@ -11,6 +11,8 @@
 #include <touchgfx/containers/scrollers/ScrollWheel.hpp>
 #include <gui/containers/MenuElement.hpp>
 
+#include "main.h"
+
 class SettingsViewBase : public touchgfx::View<SettingsPresenter>
 {
 public:
@@ -35,7 +37,7 @@ protected:
     touchgfx::Box __background;
     touchgfx::Box box1;
     touchgfx::ScrollWheel scrollWheel1;
-    touchgfx::DrawableListItems<MenuElement, 7> scrollWheel1ListItems;
+    touchgfx::DrawableListItems<MenuElement, set_SIZE> scrollWheel1ListItems;
 
 private:
     touchgfx::Callback<SettingsViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;

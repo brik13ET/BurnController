@@ -5,6 +5,7 @@
 
 StatusView::StatusView()
 {
+	scrollWheel1.animateToItem(cur_pos-1, 6);
 
 	for(uint16_t i =0; i<status_SIZE; i++)
 	{
@@ -42,11 +43,11 @@ void StatusView::handleTickEvent()
 	}
 	enc_value = __HAL_TIM_GET_COUNTER(&htim1);
 	enc_value *= -1;
-	scrollWheel1.animateToItem(cur_pos-1, 6);
 
 	for(uint16_t i =0; i<status_SIZE; i++)
 	{
 		scrollWheel1ListItems.element[i].setNumber(status[i].value);
 	}
+	scrollWheel1.animateToItem(cur_pos-1, 6);
 	scrollWheel1.invalidate();
 }

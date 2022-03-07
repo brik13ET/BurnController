@@ -17,9 +17,9 @@ StatusViewBase::StatusViewBase() :
     scrollWheel1.setPosition(0, 0, 320, 240);
     scrollWheel1.setHorizontal(false);
     scrollWheel1.setCircular(false);
-    scrollWheel1.setEasingEquation(touchgfx::EasingEquations::linearEaseOut);
-    scrollWheel1.setSwipeAcceleration(0);
-    scrollWheel1.setDragAcceleration(0);
+    scrollWheel1.setEasingEquation(touchgfx::EasingEquations::expoEaseInOut);
+    scrollWheel1.setSwipeAcceleration(10);
+    scrollWheel1.setDragAcceleration(10);
     scrollWheel1.setNumberOfItems(6);
     scrollWheel1.setSelectedItemOffset(80);
     scrollWheel1.setDrawableSize(60, 0);

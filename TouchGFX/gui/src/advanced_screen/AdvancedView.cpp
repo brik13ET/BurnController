@@ -21,6 +21,12 @@ void AdvancedView::tearDownScreen()
     AdvancedViewBase::tearDownScreen();
 }
 
+
+void AdvancedView::scrollWheel1UpdateItem(MenuElement& item, int16_t itemIndex)
+{
+
+}
+
 void AdvancedView::handleTickEvent()
 {
 
@@ -57,7 +63,8 @@ void AdvancedView::handleTickEvent()
 	enc_value = __HAL_TIM_GET_COUNTER(&htim1);
 	enc_value *= -1;
 	scrollWheel1.animateToItem(cur_pos-1, 6);
-	for(uint16_t i=0; i<rareset_SIZE; i++)
-		scrollWheel1ListItems.element[i].setNumber(rareset[i].value);
-	scrollWheel1.invalidate();
+	for (uint8_t i = 0; i < scrollWheel1ListItems.getNumberOfDrawables(); ++i) {
+		scrollWheel1ListItems[i].setNumber(rareset[i].value);
+		scrollWheel1ListItems[i].invalidate();
+	}
 }

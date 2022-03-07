@@ -57,7 +57,8 @@ void SettingsView::handleTickEvent()
 	enc_value = __HAL_TIM_GET_COUNTER(&htim1);
 	enc_value *= -1;
 	scrollWheel1.animateToItem(cur_pos-1, 6);
-	for(uint16_t i =0; i<set_SIZE; i++)
-		scrollWheel1ListItems.element[i].setNumber(set[i].value);
-	scrollWheel1.invalidate();
+	for (uint8_t i = 0; i < scrollWheel1ListItems.getNumberOfDrawables(); ++i) {
+		scrollWheel1ListItems[i].setNumber(set[i].value);
+		scrollWheel1ListItems[i].invalidate();
+	}
 }
